@@ -32,7 +32,7 @@ function getCounterValue() {
 }
 
 function incrementCounterValue() {
-  wallet.callMethod({contractId : 'near-deutsch.testnet', method: 'reset'}).then(() => getCounterValue());
+  wallet.callMethod({contractId : 'near-deutsch.testnet', method: 'increment'}).then(() => getCounterValue());
 }
 
 
